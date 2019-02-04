@@ -1,19 +1,19 @@
-CREATE DEFINER=`usrRLCY_ETL`@`%` PROCEDURE `TruncateTables`()
+CREATE DEFINER=`dbName`@`%` PROCEDURE `TruncateTables`()
 BEGIN
-truncate table BillingDetail
+truncate table Sheetl
 ;
-truncate table BillingSummary
+truncate table Sheet2
 ;
-truncate table ContractSummary
+truncate table Sheet3
 ;
-truncate table `Non Reimb`
+truncate table Sheet4
 ;
-truncate table OracleDataAllow
+truncate table Sheet5
 ;
-truncate table `OracleDataT&M`
+truncate table Sheet6
 ;
-truncate table ProjectsSummary
+truncate table Sheet7
 ;
-truncate table `Subtask reference`
+truncate table Sheet8
 ;
 END
