@@ -8,21 +8,23 @@ import datetime
 import send_email
 
 """
-All sensitive variables (file path, db, password, host, user, schema) have been stripped
-to protect confidentiality.
+All sensitive variables (file path, db, password, host, user, schema, sheet_names)
+have been stripped to protect confidentiality. This script was ultimately placed 
+on a VM where it was scheduled with chron to run twice a week.
 """
 
 #List sheet names
-sheet_names = ['ContractSummary',
-               'ProjectsSummary',
-               'OracleDataT&M',
-               'OracleDataAllow',
-               'BillingSummary',
-               'BillingDetail',
-               'Subtask reference',
-               'Non Reimb']
+sheet_names = ['Sheet1',
+               'Sheet2',
+               'Sheet3',
+               'Sheet4',
+               'Sheet5',
+               'Sheet6',
+               'Sheet7',
+               'Sheet8']
 
 def etlscript(sheet_names):
+    #Create blank dictionary for the dataframes (d)
     d = {}
     print('Reading data')
     data = (pd.ExcelFile('File Path'))
