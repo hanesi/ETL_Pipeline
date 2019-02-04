@@ -7,6 +7,11 @@ import traceback
 import datetime
 import send_email
 
+"""
+All sensitive variables (file path, db, password, host, user, schema) have been stripped
+to protect confidentiality.
+"""
+
 #List sheet names
 sheet_names = ['ContractSummary',
                'ProjectsSummary',
